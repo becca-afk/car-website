@@ -3,101 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Design</title>
-  <><link rel="stylesheet" href="style.css">
-
+  <title>Cars Hub</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <div class="container">
-    <div class="top">
-      <div class="nav-bar">
-        <nav>
-        <h2 class="logo" onclick="window.location.href='index.html'">Cars <span>Hub</span></h2>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="inventory.html">Inventory</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contacts</a></li>
-          </ul>
-          <button type="button" onclick="window.location.href='login retail version'">Login</button>
-        </nav>
-        <!-- Hero section -->
-        <section class="hero">
-          <div class="hero-inner">
-            <h1>Find your next car at Cars Hub</h1>
-            <p>Wide selection. Competitive prices. Easy financing.</p>
-            <a class="btn btn--primary" href="inventory.html">Shop Inventory</a>
-          </div>
-        </section>
-        <section class="explore">
-          <a href="#lineup">Explore</a> <!-- scrolls to lineup -->
-        </section>
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo" onclick="window.location.href='index.html'">Cars <span>Hub</span></h2>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Find Your Next Car at Cars Hub</h1>
+      <p>Wide selection. Competitive prices. Easy financing.</p>
+      <a class="btn btn-primary" href="inventory.html">Shop Inventory</a>
+    </div>
+    <a href="#lineup" class="explore-btn">Explore &#x25BC;</a>
+  </section>
+
+  <!-- CAR LINEUP -->
+  <section class="lineup" id="lineup">
+    <h2>Our Cars</h2>
+    <div class="cars">
+      <div class="car">
+        <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&q=80&w=452" alt="Lamborghini">
+        <div class="layer"><h3>Lamborghini</h3></div>
       </div>
-      <div class="bottom" id="lineup">
-        <div class="cars">
-          <div class="car">
-            <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=452" alt="">
-            <div class="layer">
-              <h3>Lamborghini</h3>
-            </div>
-          </div>
-          <div class="car">
-            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=464" alt="">
-            <div class="layer">
-              <h3>Mercedes</h3>
-            </div>
-          </div>
-          <div class="car">
-            <img src="https://images.unsplash.com/photo-1661941222254-a693532fe8e2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=464" alt="">
-            <div class="layer">
-              <h3>Bugatti</h3>
-            </div>
-          </div>
-        </div>
-                <div class="cars">
-          <div class="car">
-            <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=464" alt="">
-            <div class="layer">
-              <h3>Porsche</h3>
-            </div>
-          </div>
-          <div class="car">
-            <img src="https://images.unsplash.com/photo-1616455263449-0bd3aac04029?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=387" alt="">
-            <div class="layer">
-              <h3>BMW</h3>
-            </div>
-          </div>
-          <div class="car">
-            <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=387" alt="">
-            <div class="layer">
-              <h3>Ferrari</h3>
-            </div>
-          </div>
-        </div>
+      <div class="car">
+        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&q=80&w=464" alt="Mercedes">
+        <div class="layer"><h3>Mercedes</h3></div>
       </div>
-      <div class="footer">
-        <div class="footercontainer">
-          <div class="socialicons">
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-          </div>
-          <div class="footernav">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="">Our Team</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footerbottom">
-            <p>Copyright &copy;2025; Designed by Nova</p>
-          </div>
-        </div>
+      <div class="car">
+        <img src="https://images.unsplash.com/photo-1661941222254-a693532fe8e2?auto=format&fit=crop&q=80&w=464" alt="Bugatti">
+        <div class="layer"><h3>Bugatti</h3></div>
+      </div>
+      <div class="car">
+        <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?auto=format&fit=crop&q=80&w=464" alt="Porsche">
+        <div class="layer"><h3>Porsche</h3></div>
+      </div>
+      <div class="car">
+        <img src="https://images.unsplash.com/photo-1616455263449-0bd3aac04029?auto=format&fit=crop&q=80&w=387" alt="BMW">
+        <div class="layer"><h3>BMW</h3></div>
+      </div>
+      <div class="car">
+        <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?auto=format&fit=crop&q=80&w=387" alt="Ferrari">
+        <div class="layer"><h3>Ferrari</h3></div>
       </div>
     </div>
-  </div>
-</body>
+  </section>
 
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p class="footer-bottom">Copyright &copy;2025 | Designed by Nova</p>
+    </div>
+  </footer>
+</body>
 </html>
