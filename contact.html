@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact - Cars Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <h2 class="logo" onclick="window.location.href='index.html'">Cars <span>Hub</span></h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="inventory.html">Inventory</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main style="max-width:900px;margin:30px auto;padding:0 20px;">
+    <h1>Contact Us</h1>
+    <p>Have a question or want to schedule a test drive? Use the form below or call us.</p>
+
+    <form action="mailto:info@example.com" method="post" enctype="text/plain" style="max-width:600px;">
+      <label for="name">Name</label>
+      <input id="name" name="name" class="box" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" class="box" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" class="box" rows="5" required></textarea>
+
+      <button type="submit" class="btn btn--primary">Send</button>
+    </form>
+
+    <h2 style="margin-top:24px;">Visit Us</h2>
+    <p>Nairobi, Kenya</p>
+    <!-- Google Maps embed for Nairobi, Kenya -->
+    <div style="max-width:900px;margin-top:12px;">
+      <iframe title="map" src="https://maps.google.com/maps?q=Nairobi%2C%20Kenya&t=&z=12&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </main>
+</body>
+</html>

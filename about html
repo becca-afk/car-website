@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Cars Hub</title>
+    <link rel="stylesheet" href="about-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="parent">
+
+            <div class="nav-bar">
+                <nav>
+                <h2 class="logo">Cars <span>Hub</span></h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+                </nav>
+            </div>
+
+            <div class="main-content">
+                <div class="left">
+                    <h3>About Us</h3>
+                    <h1>Premium Car Retail & <br> Luxury Automotive Experience</h1>
+
+                    <p>
+                    At Cars Hub, we specialize in providing world-class luxury and performance vehicles.
+                    From supercars to premium sedans, we bring you the best brands at competitive
+                    pricing. Our mission is to give customers a smooth and trustworthy purchasing experience.
+                    </p>
+
+                    <p>
+                    Established in 2015, Cars Hub has grown into one of the most reputable exotic car retailers. 
+                    Our team consists of certified automotive specialists, finance advisors, and customer care professionals 
+                    dedicated to delivering excellence.
+                    </p>
+
+                    <h3 style="margin-top: 30px; color: #ff7b54;">Our Team</h3>
+                    <ul style="list-style: none; padding: 0; margin: 15px 0;">
+                        <li style="padding: 8px 0; font-size: 16px;"><strong>Rebecca Nabusambya</strong> - 2502692</li>
+                        <li style="padding: 8px 0; font-size: 16px;"><strong>Tania Kina</strong> - 2502923</li>
+                        <li style="padding: 8px 0; font-size: 16px;"><strong>Joy Vunyanzi</strong> - 2502923</li>
+                        <li style="padding: 8px 0; font-size: 16px;"><strong>Mwai Kevin</strong> - 2500541</li>
+                        <li style="padding: 8px 0; font-size: 16px;"><strong>Glen Ojijo</strong> - 2409572</li>
+                    </ul>
+
+                    <button>Learn More</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

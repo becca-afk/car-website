@@ -1,0 +1,199 @@
+/* ---------------------------
+   GLOBAL NAVIGATION
+---------------------------- */
+
+/* ---------------------------
+   GLOBAL: variables + reset
+   --------------------------- */
+
+:root {
+  --bg: rgba(255, 255, 255, 0.8);
+  --brand: #ff7b54; /* primary accent */
+  --brand-dark: #b33939; /* hover/active */
+  --text-dark: #191f1f;
+  --muted-border: rgba(0,0,0,0.1);
+  --form-bg: rgba(0,0,0,0.55);
+  --input-bg: rgba(255,255,255,0.15);
+  --input-bg-focus: rgba(255,255,255,0.25);
+  --radius: 10px;
+}
+
+/* sensible box model */
+*, *::before, *::after { box-sizing: border-box; }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10%;
+  background: var(--bg);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--muted-border);
+}
+
+.logo {
+  color: var(--text-dark);
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.logo span { color: var(--brand-dark); }
+
+nav h2 { cursor: pointer; }
+
+nav ul { margin:0; padding:0; }
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: var(--brand);
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover { color: var(--brand-dark); }
+
+/* ---------------------------
+   FORM CONTAINER
+---------------------------- */
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  margin: 80px auto;
+  background: var(--form-bg);
+  border-radius: calc(var(--radius) + 5px);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+form h1 {
+  color: white;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* ---------------------------
+   INPUT FIELDS
+---------------------------- */
+
+
+/* apply only to form inputs/textareas using the .box utility */
+input.box, textarea.box {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  background: var(--input-bg);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: var(--radius);
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+input.box:focus, textarea.box:focus {
+  background: var(--input-bg-focus);
+  border-color: #ffb787;
+}
+
+::placeholder { color: #eaeaea; }
+
+/* visible focus for accessibility */
+a:focus, button:focus, input.box:focus, textarea.box:focus {
+  outline: 3px solid rgba(255,183,135,0.18);
+  outline-offset: 2px;
+}
+
+/* ---------------------------
+   SUBMIT BUTTON
+---------------------------- */
+
+/* reusable button styles; keep #submit as a compatibility fallback */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  border-radius: var(--radius);
+  color: var(--white, #fff);
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.btn--primary { background: var(--brand); }
+.btn--primary:hover { background: var(--brand-dark); }
+
+/* keep ID rule so existing HTML using #submit continues to work */
+#submit {
+  /* compatibility fallback for pages that still target #submit */
+  background: var(--brand);
+  border: none;
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 14px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* ---------------------------
+   BACKGROUND IMAGE
+---------------------------- */
+
+/* Prefer a dedicated class for background images so ordinary <img> elements aren't affected.
+   Use <img class="bg-image" src="..."> or set an element with this class. */
+.bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+  z-index: -1;
+}
+
+/* ---------------------------
+   RESPONSIVE DESIGN
+---------------------------- */
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    padding: 20px 5%;
+  }
+
+  nav ul li {
+    padding: 8px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  form {
+    width: 90%;
+    padding: 25px;
+    margin-top: 60px;
+  }
+
+  form h1 {
+    font-size: 30px;
+  }
+}
