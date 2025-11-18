@@ -115,36 +115,55 @@ a:focus, button:focus, input.box:focus, textarea.box:focus {
   outline: 3px solid rgba(255,183,135,0.18);
   outline-offset: 2px;
 }
+/* ============================================
+   BUTTONS
+   ============================================ */
 
-/* ---------------------------
-   SUBMIT BUTTON
----------------------------- */
-
-/* reusable button styles; keep #submit as a compatibility fallback */
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 14px;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, var(--brand) 0%, #ff9975 100%);
+  color: var(--white);
+  text-decoration: none;
   border: none;
-  border-radius: var(--radius);
-  color: var(--white, #fff);
-  font-size: 20px;
-  font-weight: 600;
+  border-radius: 50px;
   cursor: pointer;
-  width: 100%;
-  transition: 0.3s ease;
+  font-weight: 700;
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  font-size: 15px;
+  box-shadow: 0 4px 15px rgba(255, 123, 84, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.btn--primary { background: var(--brand); }
-.btn--primary:hover { background: var(--brand-dark); }
+.btn:hover {
+  background: linear-gradient(135deg, #ff9975 0%, var(--brand) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 123, 84, 0.5);
+}
 
-/* keep ID rule so existing HTML using #submit continues to work */
-#submit {
-  /* compatibility fallback for pages that still target #submit */
-  background: var(--brand);
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 123, 84, 0.4);
+}
+
+.btn--primary {
+  background: linear-gradient(135deg, var(--brand) 0%, #ff9975 100%);
+  color: var(--white);
   border: none;
-  color: #fff;
-  border-radius: var(--radius);
+  box-shadow: 0 4px 15px rgba(255, 123, 84, 0.3);
+}
+
+.btn--primary:hover {
+  background: linear-gradient(135deg, #ff9975 0%, var(--brand) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 123, 84, 0.5);
+}
+
+.btn--primary:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 123, 84, 0.4);
+}
   padding: 14px;
   width: 100%;
   font-size: 20px;
@@ -197,3 +216,4 @@ a:focus, button:focus, input.box:focus, textarea.box:focus {
     font-size: 30px;
   }
 }
+
