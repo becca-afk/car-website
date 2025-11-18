@@ -1,90 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inventory - Cars Hub</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* small page-specific tweaks */
-    main { padding-bottom: 40px; }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-  <nav>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
     <h2 class="logo" onclick="window.location.href='index.html'">Cars <span>Hub</span></h2>
-    <ul>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="inventory.html">Inventory</a></li>
+      <li><a href="inventory.html" class="active">Inventory</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
   </nav>
 
-  <main>
-    <section style="padding:30px;">
-      <h1>Available Vehicles</h1>
-      <p>Browse our current inventory. Click a vehicle to view details.</p>
-    </section>
+  <!-- SUB HERO -->
+  <section class="sub-hero">
+    <h1>Our Inventory</h1>
+    <p>Explore our wide selection of cars</p>
+  </section>
 
-    <section id="inventory" style="padding:0 30px 40px;">
-      <div class="inventory-grid" aria-live="polite">
-        <!-- Static inventory cards (HTML only) -->
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&q=80&w=452" alt="Lamborghini Aventador">
-          <div class="card-body">
-            <h3>Lamborghini Aventador</h3>
-            <p class="price">KSh 1,000,000</p>
-            <a class="btn" href="product-1.html">View details</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&q=80&w=464" alt="Mercedes AMG GT">
-          <div class="card-body">
-            <h3>Mercedes AMG GT</h3>
-            <p class="price">KSh 140,000</p>
-            <a class="btn" href="product-2.html">View details</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1661941222254-a693532fe8e2?auto=format&fit=crop&q=80&w=464" alt="Bugatti Chiron">
-          <div class="card-body">
-            <h3>Bugatti Chiron</h3>
-            <p class="price">KSh 3,000,000</p>
-            <a class="btn" href="product-3.html">View details</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?auto=format&fit=crop&q=80&w=464" alt="Porsche 911 Turbo S">
-          <div class="card-body">
-            <h3>Porsche 911 Turbo S</h3>
-            <p class="price">KSh 10,000,000</p>
-            <a class="btn" href="product-4.html">View details</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1616455263449-0bd3aac04029?auto=format&fit=crop&q=80&w=387" alt="BMW M4 Competition">
-          <div class="card-body">
-            <h3>BMW M4 Competition</h3>
-            <p class="price">KSh 100,000</p>
-            <a class="btn" href="product-5.html">View details</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?auto=format&fit=crop&q=80&w=387" alt="Ferrari SF90">
-          <div class="card-body">
-            <h3>Ferrari SF90</h3>
-            <p class="price">KSh 450,000</p>
-            <a class="btn" href="product-6.html">View details</a>
-          </div>
-        </article>
+  <!-- CAR GRID -->
+  <section class="lineup" id="lineup">
+    <div class="cars">
+      <div class="car">
+        <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&q=80&w=452" alt="Lamborghini">
+        <div class="layer"><h3>Lamborghini</h3></div>
       </div>
-    </section>
-  </main>
+      <div class="car">
+        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&q=80&w=464" alt="Mercedes">
+        <div class="layer"><h3>Mercedes</h3></div>
+      </div>
+      <div class="car">
+        <img src="https://images.unsplash.com/photo-1661941222254-a693532fe8e2?auto=format&fit=crop&q=80&w=464" alt="Bugatti">
+        <div class="layer"><h3>Bugatti</h3></div>
+      </div>
+      <div class="car">
+        <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?auto=format&fit=crop&q=80&w=464" alt="Porsche">
+        <div class="layer"><h3>Porsche</h3></div>
+      </div>
+      <div class="car">
+        <img src="https://images.unsplash.com/photo-1616455263449-0bd3aac04029?auto=format&fit=crop&q=80&w=387" alt="BMW">
+        <div class="layer"><h3>BMW</h3></div>
+      </div>
+      <div class="car">
+        <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?auto=format&fit=crop&q=80&w=387" alt="Ferrari">
+        <div class="layer"><h3>Ferrari</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p class="footer-bottom">© 2025 Cars Hub | Designed by Nova</p>
+    </div>
+  </footer>
 </body>
 </html>
+
