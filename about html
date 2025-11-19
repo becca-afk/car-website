@@ -1,76 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>About - Cars Hub</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- NAVIGATION -->
-  <nav class="navbar">
+  <nav>
     <h2 class="logo" onclick="window.location.href='index.html'">Cars <span>Hub</span></h2>
-    <ul class="nav-links">
+    <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="inventory.html">Inventory</a></li>
-      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
   </nav>
 
-  <!-- SUB HERO -->
-  <section class="sub-hero">
-    <h1>About Cars Hub</h1>
-    <p>Learn more about our mission and team</p>
-  </section>
+  <main>
+    <section>
+      <h2>About Cars Hub</h2>
+      <p>Cars Hub is a family-owned dealership specialized in quality pre-owned vehicles. We focus on transparent pricing, flexible financing, and great customer service.</p>
 
-  <!-- PAGE CONTENT -->
-  <section class="page-content">
-    <h2>Who We Are</h2>
-    <p>Cars Hub is a family-owned dealership specializing in quality pre-owned vehicles. We focus on transparent pricing, flexible financing, and great customer service.</p>
+      <h2>Our Mission</h2>
+      <p>To make car buying simple, fair and enjoyable. We carefully inspect every vehicle and provide detailed history reports so you can buy with confidence.</p>
 
-    <h2>Our Mission</h2>
-    <p>To make car buying simple, fair, and enjoyable. We carefully inspect every vehicle and provide detailed history reports so you can buy with confidence.</p>
-
-    <h2>Opening Hours</h2>
-    <ul>
-      <li>Mon - Fri: 9:00AM - 6:00PM</li>
-      <li>Sat: 10:00AM - 4:00PM</li>
-      <li>Sun: Closed</li>
-    </ul>
-
-    <h2>Location</h2>
-    <p>Nairobi, Kenya</p>
-
-    <h2>Project Team</h2>
-    <ul>
-      <li>Rebecca Nabusambya – 2502692</li>
-      <li>Tania Kina – 25/02923</li>
-      <li>Joy Vuyanzi – 2502362</li>
-      <li>Mwai Kevin – 2500541</li>
-      <li>Glen Ojijo – 24/09572</li>
-    </ul>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <div class="social-icons">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-      </div>
-      <ul class="footer-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Our Team</a></li>
-        <li><a href="#">Contact</a></li>
+      <h2>Opening Hours</h2>
+      <ul>
+        <li>Mon - Fri: 9:00AM - 6:00PM</li>
+        <li>Sat: 10:00AM - 4:00PM</li>
+        <li>Sun: Closed</li>
       </ul>
-      <p class="footer-bottom">© 2025 Cars Hub | Designed by Nova</p>
-    </div>
-  </footer>
+
+      <h2>Location</h2>
+      <p>Nairobi, Kenya</p>
+
+      <h2>Project Team</h2>
+      <ul>
+        <li>Rebecca Nabusambya – 2502692</li>
+        <li>Tania Kina – 25/02923</li>
+        <li>Joy Vuyanzi – 2502362</li>
+        <li>Mwai Kevin – 2500541</li>
+        <li>Glen Ojijo – 24/09572</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
-
