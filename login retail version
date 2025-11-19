@@ -9,53 +9,66 @@
 </head>
 <body>
   <!-- NAVIGATION -->
-  <nav class="navbar">
-    <h2 class="logo" onclick="window.location.href='index.html'">Cars <span>Hub</span></h2>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="inventory.html">Inventory</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
-  </nav>
+  <header>
+    <nav class="navbar">
+      <h2 class="logo" onclick="window.location.href='index.html'">Cars <span>Hub</span></h2>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+    </nav>
+  </header>
 
-  <!-- SUB HERO -->
-  <section class="sub-hero">
-    <h1>Login to Cars Hub</h1>
-    <p>Access your account to manage your bookings</p>
+  <!-- HERO SUBSECTION -->
+  <section class="hero" style="padding:80px 5%; text-align:center;">
+    <div class="hero-inner">
+      <h1>Login to Cars Hub</h1>
+      <p>Access your account to manage your bookings</p>
+    </div>
   </section>
 
   <!-- LOGIN FORM -->
-  <section class="page-content">
+  <main class="center-viewport">
     <form class="login-form">
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="Enter your email">
-
-      <label for="password">Password:</label>
-      <input type="password" id="password" placeholder="Enter your password">
-
-      <button type="submit" class="btn-primary">Login</button>
+      <h1>Sign In</h1>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" class="box" placeholder="Enter your email" required>
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" class="box" placeholder="Enter your password" required>
+      
+      <button type="submit" class="btn btn--primary">Login</button>
+      
+      <p style="margin-top:15px; font-size:14px; color:var(--text-light);">
+        Don't have an account? <a href="contact.html" style="color:var(--brand); text-decoration:none;">Sign Up</a>
+      </p>
     </form>
-  </section>
+  </main>
 
   <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <div class="social-icons">
+  <footer class="footer">
+    <div class="footercontainer">
+      <div class="socialicons">
         <a href="#"><i class="fa-brands fa-facebook"></i></a>
         <a href="#"><i class="fa-brands fa-instagram"></i></a>
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
         <a href="#"><i class="fa-brands fa-youtube"></i></a>
       </div>
-      <ul class="footer-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Our Team</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <p class="footer-bottom">© 2025 Cars Hub | Designed by Nova</p>
+      <div class="footernav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footerbottom">
+        © 2025 Cars Hub | Designed by Nova
+      </div>
     </div>
   </footer>
 </body>
 </html>
-
