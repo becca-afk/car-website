@@ -1,23 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Cars Hub</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <h2 class="logo" onclick="window.location.href='index.html'">Cars <span>Hub</span></h2>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="inventory.html">Inventory</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo" onclick="window.location.href='index.html'">Cars <span>Hub</span></h2>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+    </nav>
+  </header>
 
-  <main style="max-width:900px;margin:30px auto;padding:0 20px;">
+  <!-- ABOUT SECTION -->
+  <section>
     <h1>About Cars Hub</h1>
     <p>Cars Hub is a family-owned dealership specialized in quality pre-owned vehicles. We focus on transparent pricing, flexible financing, and great customer service.</p>
 
@@ -42,12 +47,23 @@
       <li>Mwai Kevin – 2500541</li>
       <li>Glen Ojijo – 24/09572</li>
     </ul>
-  </main>
+  </section>
 
-  <footer class="footer">
-    <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;">
-      <div>© 2025 Cars Hub</div>
-      <div>Contact: <a href="tel:+254712345678">+254 712 345 678</a></div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer-bottom">Copyright &copy;2025 | Designed by CARHUB</p>
     </div>
   </footer>
 </body>
