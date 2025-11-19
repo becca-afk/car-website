@@ -1,43 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lamborghini Aventador — Cars Hub</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
+
 <body>
-  <nav>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
     <h2 class="logo" onclick="window.location.href='index.html'">Cars <span>Hub</span></h2>
-    <ul>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="inventory.html">Inventory</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
   </nav>
 
-  <main>
-    <section class="product-wrap">
-      <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&q=80&w=452" alt="Lamborghini Aventador">
+  <!-- SUB HERO -->
+  <section class="sub-hero">
+    <h1>Lamborghini Aventador</h1>
+    <p>Premium Pre-Owned Luxury Car</p>
+  </section>
+
+  <!-- PRODUCT SECTION -->
+  <section class="product-page">
+    <div class="product-container">
+
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&q=80&w=452"
+             alt="Lamborghini Aventador">
       </div>
-      <div class="details">
-        <h1>Lamborghini Aventador</h1>
+
+      <div class="product-details">
+        <h2>Lamborghini Aventador</h2>
         <p class="price">KSh 1,000,000</p>
-        <ul class="specs">
-          <li>Mileage: 5,200 km</li>
-          <li>Engine: 6.5L V12</li>
-          <li>Transmission: Automatic</li>
-          <li>Color: Yellow</li>
+
+        <ul class="spec-list">
+          <li><strong>Mileage:</strong> 5,200 km</li>
+          <li><strong>Engine:</strong> 6.5L V12</li>
+          <li><strong>Transmission:</strong> Automatic</li>
+          <li><strong>Color:</strong> Yellow</li>
         </ul>
-        <p>Iconic Lamborghini Aventador with dramatic styling and extreme performance.</p>
-        <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap;">
-          <a class="btn" href="inventory.html">← Back to inventory</a>
-          <a class="btn btn--primary" href="contact.html?car=1">Schedule Test Drive</a>
+
+        <p class="description">
+          Iconic Lamborghini Aventador with dramatic styling and extreme performance.
+        </p>
+
+        <div class="btn-group">
+          <a href="inventory.html" class="btn">← Back to Inventory</a>
+          <a href="contact.html?car=1" class="btn btn--primary">Schedule Test Drive</a>
         </div>
       </div>
-    </section>
-  </main>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <p class="footer-bottom">© 2025 Cars Hub | Designed by carhub</p>
+    </div>
+  </footer>
+
 </body>
 </html>
+
