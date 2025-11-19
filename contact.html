@@ -4,87 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Cars Hub</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <h2 class="logo" onclick="window.location.href='index.html'">Cars <span>Hub</span></h2>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="inventory.html">Inventory</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo" onclick="window.location.href='index.html'">Cars <span>Hub</span></h2>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+    </nav>
+  </header>
 
-  <main>
-    <section id="general-contact">
-      <h1>Contact Us</h1>
-      <p>Have a question or want to schedule a test drive? Use the form below or call us.</p>
+  <!-- CONTACT SECTION -->
+  <section id="schedule-test-drive">
+    <h1>Schedule a Test Drive</h1>
+    <p>Fill in your details below to book a test drive for your preferred car.</p>
 
-      <form action="mailto:info@example.com" method="post" enctype="text/plain">
-        <label for="name">Name</label>
-        <input id="name" name="name" class="box" required>
+    <form action="mailto:info@example.com" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input id="name" name="name" class="box" required>
 
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" class="box" required>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" class="box" required>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" class="box" rows="5" required></textarea>
+      <label for="car">Car</label>
+      <input id="car" name="car" class="box" placeholder="Enter the car name" required>
 
-        <button type="submit" class="btn btn--primary">Send Message</button>
-      </form>
-    </section>
+      <label for="date">Preferred Date</label>
+      <input id="date" name="date" type="date" class="box" required>
 
-    <section id="schedule-test-drive">
-      <h2>Schedule a Test Drive</h2>
-      <p>Fill out the form below to book a test drive for any of our cars:</p>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
 
-      <!-- Example for Lamborghini Aventador -->
-      <form action="mailto:info@example.com" method="post" enctype="text/plain">
-        <label for="name1">Name</label>
-        <input id="name1" name="name" class="box" required>
+    <h2>Visit Us</h2>
+    <p>Nairobi, Kenya</p>
+    <iframe src="https://maps.google.com/maps?q=Nairobi%2C%20Kenya&t=&z=12&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;margin-top:15px;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
 
-        <label for="email1">Email</label>
-        <input id="email1" name="email" type="email" class="box" required>
-
-        <label for="car1">Car</label>
-        <select id="car1" name="car" class="box">
-          <option>Lamborghini Aventador</option>
-          <option>Mercedes AMG GT</option>
-          <option>Bugatti Chiron</option>
-          <option>Porsche 911 Turbo S</option>
-          <option>BMW M4 Competition</option>
-          <option>Audi R8</option>
-        </select>
-
-        <label for="date1">Preferred Date</label>
-        <input id="date1" name="date" type="date" class="box" required>
-
-        <button type="submit" class="btn btn--primary">Book Test Drive</button>
-      </form>
-    </section>
-
-    <section>
-      <h2>Visit Us</h2>
-      <p>Nairobi, Kenya</p>
-      <iframe src="https://maps.google.com/maps?q=Nairobi&t=&z=12&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footercontainer">
-      <div class="footernav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="inventory.html">Inventory</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
       </div>
-      <div class="footerbottom">
-        © 2025 Cars Hub | Contact: <a href="tel:+254712345678">+254 712 345 678</a>
-      </div>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer-bottom">Copyright &copy;2025 | Designed by CARHUB</p>
     </div>
   </footer>
 </body>
