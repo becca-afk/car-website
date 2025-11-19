@@ -1,86 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Mercedes AMG GT — Cars Hub</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-  <!-- NAVIGATION -->
-  <nav class="navbar">
+  <nav>
     <h2 class="logo" onclick="window.location.href='index.html'">Cars <span>Hub</span></h2>
-    <ul class="nav-links">
+    <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="inventory.html">Inventory</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
   </nav>
 
-  <!-- SUB HERO -->
-  <section class="sub-hero">
-    <h1>Mercedes AMG GT</h1>
-    <p>Luxury High-Performance Coupe</p>
-  </section>
-
-  <!-- PRODUCT SECTION -->
-  <section class="product-page">
-    <div class="product-container">
-
-      <div class="product-image">
-        <img src="https://images.unsplash.com/photo-1610465299990-5a02121663df?auto=format&fit=crop&q=80&w=500"
-             alt="Mercedes AMG GT">
+  <main>
+    <section class="product-wrap">
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&q=80&w=464" alt="Mercedes AMG GT">
       </div>
-
-      <div class="product-details">
-        <h2>Mercedes AMG GT</h2>
-        <p class="price">KSh 650,000</p>
-
-        <ul class="spec-list">
-          <li><strong>Mileage:</strong> 12,000 km</li>
-          <li><strong>Engine:</strong> 4.0L Twin Turbo V8</li>
-          <li><strong>Transmission:</strong> Automatic</li>
-          <li><strong>Color:</strong> Silver</li>
+      <div class="details">
+        <h1>Mercedes AMG GT</h1>
+        <p class="price">KSh 140,000</p>
+        <ul class="specs">
+          <li>Mileage: <strong>20,000 km</strong></li>
+          <li>Engine: <strong>4.0L V8</strong></li>
+          <li>Transmission: <strong>Automatic</strong></li>
+          <li>Color: <strong>Silver</strong></li>
         </ul>
-
-        <p class="description">
-          The Mercedes AMG GT combines luxury and raw V8 performance in a stunning sports coupe.
-        </p>
-
-        <div class="btn-group">
-          <a href="inventory.html" class="btn">← Back to Inventory</a>
-          <a href="contact.html?car=2" class="btn btn--primary">Schedule Test Drive</a>
+        <p>Mercedes AMG GT — pure driving excitement with luxury touches.</p>
+        <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap;">
+          <a class="btn" href="inventory.html">← Back to Inventory</a>
+          <a class="btn btn--primary" href="contact.html">Schedule Test Drive</a>
         </div>
       </div>
-
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <div class="social-icons">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-      </div>
-
-      <ul class="footer-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="inventory.html">Inventory</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-
-      <p class="footer-bottom">© 2025 Cars Hub | Designed by carhub</p>
-    </div>
-  </footer>
-
+    </section>
+  </main>
 </body>
 </html>
-
