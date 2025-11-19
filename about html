@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Cars Hub</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,11 +19,11 @@
 
   <main>
     <section>
-      <h2>About Cars Hub</h2>
-      <p>Cars Hub is a family-owned dealership specialized in quality pre-owned vehicles. We focus on transparent pricing, flexible financing, and great customer service.</p>
+      <h1>About Cars Hub</h1>
+      <p>Cars Hub is a family-owned dealership specialized in quality pre-owned vehicles. We focus on transparent pricing, flexible financing, and excellent customer service.</p>
 
       <h2>Our Mission</h2>
-      <p>To make car buying simple, fair and enjoyable. We carefully inspect every vehicle and provide detailed history reports so you can buy with confidence.</p>
+      <p>To make car buying simple, fair, and enjoyable. We carefully inspect every vehicle and provide detailed history reports so you can buy with confidence.</p>
 
       <h2>Opening Hours</h2>
       <ul>
@@ -45,5 +45,21 @@
       </ul>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="footercontainer">
+      <div class="footernav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footerbottom">
+        © 2025 Cars Hub | Contact: <a href="tel:+254712345678">+254 712 345 678</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
