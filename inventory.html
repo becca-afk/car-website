@@ -4,118 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inventory - Cars Hub</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
 </head>
 <body>
-  <nav>
-    <h2 class="logo" onclick="window.location.href='index.html'">Cars <span>Hub</span></h2>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="inventory.html">Inventory</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo" onclick="window.location.href='index.html'">Cars <span>Hub</span></h2>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+    </nav>
+  </header>
 
-  <main>
-    <h1 style="text-align:center; margin:40px 0;">Our Inventory</h1>
-
-    <section class="inventory-grid">
-      <!-- Car 1 -->
-      <div class="card">
-        <img src="images/lamborghini.jpg" alt="Lamborghini Aventador">
-        <div class="card-body">
-          <h3>Lamborghini Aventador</h3>
-          <p class="price">KSh 50,000,000</p>
-          <ul class="specs">
-            <li>Mileage: 0 km</li>
-            <li>Engine: 6.5L V12</li>
-            <li>Transmission: Automatic</li>
-          </ul>
-          <a href="car-details.html?car=lamborghini" class="btn btn--primary">View Details</a>
-        </div>
+  <!-- INVENTORY GRID -->
+  <section class="inventory-grid">
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&q=80&w=452" alt="Lamborghini">
+      <div class="layer">
+        <h3>Lamborghini Aventador</h3>
+        <p>$450,000</p>
+        <a class="btn btn-primary" href="contact.html#schedule-test-drive">View Details</a>
       </div>
-
-      <!-- Car 2 -->
-      <div class="card">
-        <img src="images/mercedes.jpg" alt="Mercedes AMG GT">
-        <div class="card-body">
-          <h3>Mercedes AMG GT</h3>
-          <p class="price">KSh 25,000,000</p>
-          <ul class="specs">
-            <li>Mileage: 5,000 km</li>
-            <li>Engine: 4.0L V8</li>
-            <li>Transmission: Automatic</li>
-          </ul>
-          <a href="car-details.html?car=mercedes" class="btn btn--primary">View Details</a>
-        </div>
-      </div>
-
-      <!-- Car 3 -->
-      <div class="card">
-        <img src="images/bugatti.jpg" alt="Bugatti Chiron">
-        <div class="card-body">
-          <h3>Bugatti Chiron</h3>
-          <p class="price">KSh 120,000,000</p>
-          <ul class="specs">
-            <li>Mileage: 0 km</li>
-            <li>Engine: 8.0L W16</li>
-            <li>Transmission: Automatic</li>
-          </ul>
-          <a href="car-details.html?car=bugatti" class="btn btn--primary">View Details</a>
-        </div>
-      </div>
-
-      <!-- Car 4 -->
-      <div class="card">
-        <img src="images/porsche.jpg" alt="Porsche 911 Turbo S">
-        <div class="card-body">
-          <h3>Porsche 911 Turbo S</h3>
-          <p class="price">KSh 35,000,000</p>
-          <ul class="specs">
-            <li>Mileage: 2,000 km</li>
-            <li>Engine: 3.8L Twin-Turbo</li>
-            <li>Transmission: Automatic</li>
-          </ul>
-          <a href="car-details.html?car=porsche" class="btn btn--primary">View Details</a>
-        </div>
-      </div>
-
-      <!-- Car 5 -->
-      <div class="card">
-        <img src="images/bmw.jpg" alt="BMW M4 Competition">
-        <div class="card-body">
-          <h3>BMW M4 Competition</h3>
-          <p class="price">KSh 20,000,000</p>
-          <ul class="specs">
-            <li>Mileage: 3,000 km</li>
-            <li>Engine: 3.0L Twin-Turbo</li>
-            <li>Transmission: Automatic</li>
-          </ul>
-          <a href="car-details.html?car=bmw" class="btn btn--primary">View Details</a>
-        </div>
-      </div>
-
-      <!-- Car 6 -->
-      <div class="card">
-        <img src="images/audi.jpg" alt="Audi R8">
-        <div class="card-body">
-          <h3>Audi R8</h3>
-          <p class="price">KSh 28,000,000</p>
-          <ul class="specs">
-            <li>Mileage: 1,500 km</li>
-            <li>Engine: 5.2L V10</li>
-            <li>Transmission: Automatic</li>
-          </ul>
-          <a href="car-details.html?car=audi" class="btn btn--primary">View Details</a>
-        </div>
-      </div>
-    </section>
-
-    <div style="text-align:center; margin:50px 0;">
-      <a href="contact.html#schedule-test-drive" class="btn btn--primary">Schedule Test Drive</a>
     </div>
-  </main>
 
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&q=80&w=464" alt="Mercedes">
+      <div class="layer">
+        <h3>Mercedes AMG GT</h3>
+        <p>$150,000</p>
+        <a class="btn btn-primary" href="contact.html#schedule-test-drive">View Details</a>
+      </div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1661941222254-a693532fe8e2?auto=format&fit=crop&q=80&w=464" alt="Bugatti">
+      <div class="layer">
+        <h3>Bugatti Chiron</h3>
+        <p>$3,000,000</p>
+        <a class="btn btn-primary" href="contact.html#schedule-test-drive">View Details</a>
+      </div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?auto=format&fit=crop&q=80&w=464" alt="Porsche">
+      <div class="layer">
+        <h3>Porsche 911 Turbo S</h3>
+        <p>$220,000</p>
+        <a class="btn btn-primary" href="contact.html#schedule-test-drive">View Details</a>
+      </div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1616455263449-0bd3aac04029?auto=format&fit=crop&q=80&w=387" alt="BMW">
+      <div class="layer">
+        <h3>BMW M4 Competition</h3>
+        <p>$85,000</p>
+        <a class="btn btn-primary" href="contact.html#schedule-test-drive">View Details</a>
+      </div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?auto=format&fit=crop&q=80&w=387" alt="Ferrari">
+      <div class="layer">
+        <h3>Ferrari F8</h3>
+        <p>$300,000</p>
+        <a class="btn btn-primary" href="contact.html#schedule-test-drive">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer-bottom">Copyright &copy;2025 | Designed by Nova</p>
+    </div>
+  </footer>
 </body>
 </html>
